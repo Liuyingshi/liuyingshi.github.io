@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CICI</title>
+
+	<link rel="stylesheet" type="text/css" href="作品.css">
+<style type="text/css">
+		div#d1 {
+			
+			z-index: -1; }
+			
+			div#d2 {
+			
+			z-index: +1; 
+		}
+		ul {
+             list-style-type: none;
+               margin: 0;
+              padding-top: 35px;
+             padding-right: 170px;
+    
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color:  #ad6163;
+    color: white;
+}
+
+.dropbtn {
+    background-color:  white;
+    color: #341a33;
+    padding: 14px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:  white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color:  #ad6163;
+	 color: white;
+	
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color:  #ad6163;
+    color: white;
+    font-weight: bold;
+}
+
+div.scroll {
+		width: 900px;
+		height: 480px;
+		background-color:white;
+		color: black;
+		padding: 10px;
+		margin: 0 50px 100px 350px;
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+	/* width */
+	div.scroll::-webkit-scrollbar {
+		width: 5px;
+	}
+	/* Track */
+	div.scroll::-webkit-scrollbar-track {
+		box-shadow: inset 0 0 5px grey;  
+		border-radius: 10px;
+	}
+	/* Handle */
+	div.scroll::-webkit-scrollbar-thumb {
+		background: #ad6163; 
+		border-radius: 10px;
+	}
+	/* Handle on hover */
+	div.scroll::-webkit-scrollbar-thumb:hover {
+		background: #724849; 
+	}
+
+		
+		
+	</style>
+</head>
+
+	<body > 
+		<div id="d1";  style="position:absolute; top:-25px; left:300px">
+			<img src="./picture/11.jpg" width="250px">
+		</div>
+
+		<div style="position:absolute; top:15px; left:340px">
+			<h1>我的作品</h1>
+		</div>
+
+		<ul>
+  <li><a href="index.html">主页</a></li>
+  <li><a href="联系.html">联系</a></li>
+  <li>	<a href="作品.html">作品</a></li>
+  <li><a href="关于.html">关于</a></li>
+</ul>
+	
+<div  id="d2"; class="dropdown"; style="position:absolute; top:43px; right:410px">
+  <button class="dropbtn">作品</button>
+  <div class="dropdown-content">
+   <a href="作品.html">机器人</a>
+     <a href="工设周边.html">工设周边</a>
+    <a href="塑料星球.html">塑料星球</a>
+      <a href="医疗.html">医疗APP</a>
+  </div>
+</div>
+	<div class="scroll";  style="position:absolute; top:128px; right: 230px">
+	<h2>————医疗app————</h2>	
+<p>
+类型：界面<br/>
+工具：PS/AI<br/>
+目的：设计一款线上医疗APP界面。<br/>
+通过预约挂号、在线支付、网络医院等互联网应用，优化就医流程。实现线上线下就医结合。
+
+</p>
+		<img src="./picture/展板.jpg" width="890px">
+
+	
+	</div>
+	<div style="position:absolute; top:690px; left:650px">
+	<h3 >———— 生活明朗 万物可爱 ————</h3>
+</div>
+
+</body>
+</html>

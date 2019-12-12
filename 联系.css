@@ -1,0 +1,48 @@
+body{
+	padding-left: 100px;
+	padding-right: 100px;
+
+}
+
+h1{
+color: white;
+font-size: 30pt;
+text-align: left;
+font-weight: bold;
+}
+h2{
+color: #341a33;
+font-size: 40pt;
+
+}
+h3{
+font-size: 8pt;
+color: #341a33;}
+
+h4{
+font-size: 20pt;
+color: #341a33;
+}
+p{
+color: #341a33;
+
+
+}
+a:link{
+	color: #341a33;
+	font-weight: normal;
+	text-decoration-line: none;
+}
+a:hover{
+	font-weight: bold;
+
+}
+a:active{
+	color: #ffffff;
+	
+	font-weight: bold;
+	text-decoration-line: none;
+}
+a:visited{
+	color: #341a33;
+}

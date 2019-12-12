@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CICI</title>
+
+	<link rel="stylesheet" type="text/css" href="关于.css">
+<style type="text/css">
+		
+		div#d1 {
+			
+			z-index: -1; 
+		}
+
+
+			div#d2 {
+			
+			z-index: +1; }
+		ul {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 35px;
+    padding-right: 170px;
+    
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color:  #ad6163;
+    color: white;
+}
+
+.dropbtn {
+    background-color:  white;
+    color: #341a33;
+    padding: 14px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:  white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color:  #ad6163;
+	 color: white;
+	
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color:  #ad6163;
+    color: white;
+    font-weight: bold;
+}
+
+div.scroll {
+		width: 900px;
+		height: 480px;
+		background-color:white;
+		color: black;
+		padding: 10px;
+		margin: 0 50px 100px 350px;
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+	/* width */
+	div.scroll::-webkit-scrollbar {
+		width: 5px;
+	}
+	/* Track */
+	div.scroll::-webkit-scrollbar-track {
+		box-shadow: inset 0 0 5px grey;  
+		border-radius: 10px;
+	}
+	/* Handle */
+	div.scroll::-webkit-scrollbar-thumb {
+		background: #ad6163; 
+		border-radius: 10px;
+	}
+	/* Handle on hover */
+	div.scroll::-webkit-scrollbar-thumb:hover {
+		background: #724849; 
+	}
+
+	table,  td{
+		    border:0 ; 
+			border-collapse: collapse;
+			
+		}
+
+		
+		
+		</style>
+</head>
+
+	<body > 
+		<div id="d1";  style="position:absolute; top:-25px; left:300px">
+			<img src="./picture/11.jpg" width="250px">
+		</div>
+
+		<div style="position:absolute; top:15px; left:355px">
+			<h1>关于我</h1>
+		</div>
+
+		<ul>
+  <li><a href="index.html">主页</a></li>
+  <li><a href="联系.html">联系</a></li>
+  <li>	<a href="作品.html">作品</a></li>
+  <li><a href="关于.html">关于</a></li>
+</ul>
+	<div  id="d2"; class="dropdown"; style="position:absolute; top:43px; right:410px">
+  <button class="dropbtn">作品</button>
+  <div class="dropdown-content">
+   <a href="作品.html">机器人</a>
+     <a href="工设周边.html">工设周边</a>
+    <a href="塑料星球.html">塑料星球</a>
+      <a href="医疗.html">医疗APP</a>
+  </div>
+   </div>
+	<div class="scroll";  style="position:absolute; top:128px; right: 230px">
+		<p style="font-weight: bold;">———欢迎光临我这里所有风景———</p>
+
+
+<table style="width:100%;">
+		<tr>
+			<td style="width: 33.3%;"><p>刘颖诗(CICI)<br>1998-10-23<br>南京艺术学院<br>产品设计专业<br>一个能力很小欲望很大的普通人<br>微笑是必需品<br>温柔清醒知进退<br>努力才是生存之道</p></td>
+			<td style="width: 33.3%;text-align: center;"><img src="./picture/6.jpg" width="260px"></td> 
+			<td style="width: 33.3%;"><p>这世界还是留了很多爱给我们<br>不管经历什么都没有把真心和好奇心消磨<br>还为一朵云和一场日落欢呼着<br>还有许多人毫不吝啬的照顾跟耐心<br>就轻松点往前吧<br>希望那些波折也有更好的结果<br>冬天来了<br>保持可爱</p></td>
+		</tr>
+		<tr>
+			<td><img src="./picture/7.jpg" width="260px"></td>
+			<td><p>在这个光怪陆离的人间<br>没有谁可以将日子过得行云流水<br>但我始终相信<br>走过平湖烟雨，岁月山河<br>那些历尽劫数、尝遍百味的人<br>会更加生动而干净<br>时间永远是旁观者<br>所有的过程和结果<br>都需要我们自己承担</p></td> 
+			<td style="text-align: right;"><img src="./picture/8.jpg" width="260px"></td>
+		</tr>
+		
+	</table>
+
+</div>
+		<div style="position:absolute; top:690px; left:650px">
+	<h3 >———— 生活明朗 万物可爱 ————</h3>
+</div>
+
+	
+
+</body>
+</html>

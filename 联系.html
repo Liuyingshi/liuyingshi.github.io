@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CICI</title>
+
+	<link rel="stylesheet" type="text/css" href="联系.css">
+	<style type="text/css">
+div#d1 {
+			
+			z-index: -1; 
+		}
+		div#d2 {
+			
+			z-index: +1; }
+		ul {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 35px;
+    padding-right: 170px;
+    
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color:  #ad6163;
+    color: white;
+}
+.dropbtn {
+    background-color:  white;
+    color: #341a33;
+    padding: 14px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:  white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color:  #ad6163;
+	 color: white;
+	
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color:  #ad6163;
+    color: white;
+    font-weight: bold;
+}
+
+.button {
+    background-color: white;
+    color: #341a33;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid #341a33;
+  font-size: 28px;
+  padding: 12px 12px;
+  width: 250px;
+  transition: all 0.5s;
+  margin: 5px;
+  border-radius: 8px;
+}
+
+
+.button span {
+
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+</style>
+<script type="text/javascript">
+		function imageDisplay(){
+			var show = document.getElementById("2").style.visibility;
+			console.log(show);
+			if (show == "visible"){
+				document.getElementById("2").style.visibility = "hidden";
+				console.log("The 2 is now hidden!");
+			}else{
+				document.getElementById("2").style.visibility = "visible";
+				console.log("The 2 is now visible!");
+			}
+
+		}
+		function imageDisplay1(){
+			var show = document.getElementById("3").style.visibility;
+			console.log(show);
+			if (show == "visible"){
+				document.getElementById("3").style.visibility = "hidden";
+				console.log("The 3 is now hidden!");
+			}else{
+				document.getElementById("3").style.visibility = "visible";
+				console.log("The 3 is now visible!");
+			}
+
+		}
+		function imageDisplay2(){
+			var show = document.getElementById("4").style.visibility;
+			console.log(show);
+			if (show == "visible"){
+				document.getElementById("4").style.visibility = "hidden";
+				console.log("The 4 is now hidden!");
+			}else{
+				document.getElementById("4").style.visibility = "visible";
+				console.log("The 4 is now visible!");
+			}
+
+		}
+
+</script>
+
+</head>
+
+	<body >
+		<div id="d1";  style="position:absolute; top:-25px; left:300px">
+			<img src="./picture/11.jpg" width="250px">
+		</div>
+
+		<div style="position:absolute; top:15px; left:355px">
+			<h1>联系我</h1>
+		</div>
+
+		<ul>
+  <li><a href="index.html">主页</a></li>
+  <li><a href="联系.html">联系</a></li>
+  <li>	<a href="作品.html">作品</a></li>
+  <li><a href="关于.html">关于</a></li>
+</ul>
+<div  id="d2"; class="dropdown"; style="position:absolute; top:43px; right:410px">
+  <button class="dropbtn">作品</button>
+  <div class="dropdown-content">
+   <a href="作品.html">机器人</a>
+     <a href="工设周边.html">工设周边</a>
+    <a href="塑料星球.html">塑料星球</a>
+      <a href="医疗.html">医疗APP</a>
+  </div>
+   </div>
+	<div style="position:absolute; top:190px; left:480px">
+	    <h2>915256436@qq.com</h2>
+	</div>
+
+		
+	
+	<div style="position:absolute; top:310px; left:615px">
+		<a href="mailto:915256436@qq.com"><button class="button" style="vertical-align:middle"><span>联系我</span></button></a>
+	   
+	</div>
+<div style="position:absolute; top:453.5px; left:491px">
+		<button  onclick="imageDisplay2()"style=" background-color: white;border: none;"><img src="./picture/16.png" width="77px"></button><br/>
+	<img src="./picture/22.png" style="width: 90px; visibility: hidden;" id="4">
+	</div>
+
+<div style="position:absolute; top:450px; left:700px">
+		<button onclick="imageDisplay()"style=" background-color: white;border: none;"><img src="./picture/17.png" width="86px"></button><br/>
+	<img src="./picture/20.jpg" style="width: 90px; visibility: hidden;" id="2">
+	</div>
+
+	<div style="position:absolute; top:452px; left:912px">
+		<button  onclick="imageDisplay1()"style=" background-color: white;border: none;"><img src="./picture/18.png" width="80px"></button><br/>
+	<img src="./picture/21.jpg" style="width: 90px; visibility: hidden;" id="3">
+	</div>
+</div>
+	 
+	<div style="position:absolute; top:690px; left:650px">
+	<h3 >———— 生活明朗 万物可爱 ————</h3>
+</div>
+
+</body>
+</html>
